@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - AyyLaundry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wadah header-isi">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="Logo AyyLaundry berupa mesin cuci dan gelembung sabun" width="40" height="40">
+        <span>AyyLaundry</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="menu">&#9776;</button>
+      <nav id="menu" class="nav" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="katalog.html">Katalog</a></li>
+          <li><a class="aktif" href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="judul-halaman">
+      <div class="wadah">
+        <h1>Hubungi Kami</h1>
+        <p>Antar jemput gratis untuk pesanan di atas 10 kg</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wadah kontak-isi">
+        <article>
+          <h2>Informasi Kontak</h2>
+          <ul class="info-kontak">
+            <li><strong>Alamat:</strong> Jl. Dengan Sepatu Roda</li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/6281234567890">0812-3456-7890</a></li>
+            <li><strong>Email:</strong> <a href="mailto:It's@ayylaundry.id">It's@ayylaundry.id</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/ayylaundry">@ayylaundry</a></li>
+            <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/@ayylaundry">@ayylaundry</a></li>
+          </ul>
+          <div class="tabel-bungkus">
+            <table>
+              <caption>Jam operasional</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Hari</th>
+                  <th scope="col">Jam Buka</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Senin - Jumat</td>
+                  <td>09.00 - 20.00</td>
+                </tr>
+                <tr>
+                  <td>Sabtu</td>
+                  <td>09.00 - 17.00</td>
+                </tr>
+                <tr>
+                  <td>Minggu</td>
+                  <td>10.00 - 14.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article>
+          <h2>Kirim Pesan</h2>
+          <form action="kontak.html" method="get">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+
+            <label for="hp">Nomor HP</label>
+            <input type="tel" id="hp" name="hp" placeholder="081234567890" pattern="[0-9]{10,13}" title="Isi 10 sampai 13 digit angka" required>
+            <p class="petunjuk">10 sampai 13 digit angka, tanpa spasi atau tanda hubung.</p>
+
+            <label for="layanan">Layanan</label>
+            <select id="layanan" name="layanan" required>
+              <option value="">-- Pilih layanan --</option>
+              <option value="kiloan">Cuci Kiloan Reguler</option>
+              <option value="express">Cuci Setrika Express</option>
+              <option value="setrika">Setrika Saja</option>
+              <option value="bedcover">Cuci Bedcover &amp; Selimut</option>
+              <option value="sepatu">Cuci Sepatu</option>
+              <option value="jas">Dry Cleaning Jas</option>
+            </select>
+
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5" minlength="10" maxlength="300" placeholder="Tulis pesan Anda (10 sampai 300 karakter)" required></textarea>
+
+            <button class="tombol tombol-biru" type="submit">Kirim Pesan</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="wadah">
+        <h2 class="judul-seksi">Lokasi Kami</h2>
+        <iframe class="peta" title="Peta lokasi AyyLaundry" src="https://maps.google.com/maps?q=Jl.+Melati+No.+12&amp;output=embed" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 AyyLaundry. Semua hak dilindungi.</p>
+    <p>Hubungi kami: <a href="kontak.html">halaman kontak</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
